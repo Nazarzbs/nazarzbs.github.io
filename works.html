@@ -10,16 +10,29 @@
 	</head>
 	<body>
 		<div id="vanta"></div>
-		<main class="main">
-			<h3>Hello!</h3>
-			<p>I'm front-end developer</p>
-			<a href="./works.html">My works</a>
+		<main class="portfolio">
+			<h1>My works</h1>
+			<div class="works__row">
+				<h3>Elon Musk CV</h3>
+				<div class="works__item">
+					<img src="./images/elonmuskCV.png" alt="" />
+				</div>
+				<h3>Super hero card animation</h3>
+				<div class="works__item">
+					<img src="./images/card.jpg" alt="" />
+				</div>
+				<h3>Minimalistic photography studio site</h3>
+
+				<div class="works__item">
+					<img src="./images/site.png" alt="" />
+				</div>
+			</div>
 		</main>
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
 		<script>
-			VANTA.GLOBE({
+			VANTA.BIRDS({
 				el: "#vanta",
 				mouseControls: true,
 				touchControls: true,
@@ -28,11 +41,6 @@
 				minWidth: 200.0,
 				scale: 1.0,
 				scaleMobile: 1.0,
-				color: 0x2e7389,
-				size: 2.0,
-
-				backgroundColor: 0x201a1c,
-				// він написан ось тут
 			});
 		</script>
 	</body>
