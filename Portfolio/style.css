@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Open Sans";
+	color: white;
+	background: #07192f;
+}
+
+#vanta {
+	z-index: -1;
+	position: absolute;
+	inset: 0;
+	height: 100vh;
+}
+
+.main {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+.main a {
+	color: white;
+}
+
+.portfolio {
+	margin: 10vh auto 0;
+	max-width: 1000px;
+	padding: 0 25px;
+}
+.portfolio h1 {
+	text-align: center;
+	padding: 10px;
+}
+.portfolio h3 {
+	text-align: center;
+	padding: 20px;
+}
+.works__row {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	gap: 20px;
+	overflow-x: hidden;
+}
+.works__item {
+	flex: 1 1 50%;
+	margin: 0 auto;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.works__item img {
+	max-width: 500px;
+}
+
+@keyframes appear {
+	0% {
+		opacity: 0;
+		transform: translate(0, 20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0, 0px);
+	}
+}
+
+.works__row {
+	animation: appear 1s forwards;
+}
